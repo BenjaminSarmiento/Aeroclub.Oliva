@@ -1,0 +1,542 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/*.bienvenida{
+    display: flex;
+    align-items: center;
+    /*justify-content: center;
+}*/
+/*header{
+   /* width: 100%;
+    width: auto;*/
+    /*position: relative;
+    overflow: hidden;
+}*/
+body{
+   /*background-color: rgb(58, 57, 57);*/
+   background-color: rgb(211, 201, 201);
+}
+video{
+   /* width: auto;*/
+   /*float: left;
+   padding: 10px;
+   width: 70%;
+   margin-top: 40px;
+   margin-left: 20px;
+   background-color: seagreen;
+   border-radius: 3rem;*/
+   width: 100vw;
+}
+.titulo{
+  color: red;
+  position: absolute;
+  margin-top: 2px;
+}
+.absolute{
+    /*width: 100%;
+    height: 100%;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    position: absolute;
+    /*text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+.contenedorVideo{
+    margin-right: 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.575);
+}*/
+.navbar{
+    background-color: rgb(77, 77, 77);
+   /* opacity: 0.6;*/
+    height: 100px;
+    /*width: 98.7vw;*/
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    box-shadow: 5px 0 10px black;
+    position: fixed;
+    top: 0;
+    z-index: 101;
+}
+.logoNav{
+    width: 100px;
+    height: 100px;
+    padding: 8;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.menu li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    padding: 7px 13px;
+}
+.menu li:hover{
+    background-color: black;
+}
+.active{
+    background-color: black;
+}
+.btnMenu{
+    margin-right: 30px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+.tituloPrincipal{
+    font-size: 80px;
+    font-weight: 900;
+    z-index: 100;
+    /*margin-bottom: 30px;*/
+   color: rgb(255, 255, 255);
+}
+.containerBoton{
+    position: fixed;
+     width: 55px;
+     height: 55px;
+     bottom: 50px;
+     right: 50px;
+     transition: ease 0.3s;
+     z-index: 81
+}
+.containerBoton:hover{
+    transform: scale(1.1);
+ }
+.tituloBienvenida{
+    margin-left: 20px;
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin-top: 30px;
+}
+.sectorBienvenida{
+    display: flex;
+    align-items: center;
+}
+/*.imagenBienvenida{
+    padding-left: -10px;
+}*/
+.textoBienvenida{
+    margin-left: 100px;
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+.tituloServicios{
+    color: black;
+    padding-top: 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+.cards{
+   width: 100%;
+   display: flex;
+   flex: wrap;
+   justify-content: center;
+   padding-bottom: 50px;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 14px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0)
+    /*padding-left: 100px;
+    margin-left: 30px;
+    width: 56px;
+    height: 370px;*/
+}
+.card strong{
+    text-decoration: none;
+}
+.card:hover{
+    background-color: rgb(157, 186, 211);
+}
+.card:hover img{
+    transform: translateY(-75px);
+    transition: all 400ms;
+}
+.card:hover .tituloCard{
+    transform: translateY(-75px);
+    transition: all 500ms;
+}
+.card img{
+   width: 60%;
+}
+/*.card .btnCard{
+    opacity: 0;
+}
+.card:hover .btnCard{
+    opacity: 1;
+}*/
+.contenedorServicios{
+    background-image: url(./img/fondo-servicios.jpg);
+   margin-bottom: 100px;
+}
+.textoCard{
+   font-size: 14px;
+   color: black;
+}
+.linkCard{
+   text-decoration: none;
+}
+/*testimonios*/
+.comentarios{
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 100px; /*modificar estooooooooooooooooo*/
+}
+                                            
+.tituloTestimonios{
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+.headerComentario{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.comentario{
+    width: 400px;
+    height: 220px;
+    border-radius: 10px;
+    border: 1px;
+}
+.comentario:hover{
+    transition: all 300ms;
+    position: relative;
+    transform: scale(1.1, 1.1);
+}
+.imagenComentario{
+    width: 70px;
+    height: 70px;
+    padding-right: 1px;
+    border-radius: 100px;
+    margin-left: 10px;
+}
+.descripcionComentario{
+    padding-top: 1px;
+    font-size: 15px;
+}
+.titulosComentario{
+    margin-left: 20px;
+}
+.nombreComentario strong{
+    width: 10px;
+    height: 2px;
+}
+.contenedorMapa{
+    background-image: url(./img/imagen-mapa3.jpg);
+    display: flex;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.contenedorMapaContacto{
+    background-image: url(./img/imagen-mapa-contacto.jpeg);
+    display: flex;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 100px;
+}
+.mapa{
+    text-align: right;
+    margin: 30px 30px 30px 450px;
+}
+.tituloMapa{
+    text-align: left;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
+    color: white;
+}
+.descripcionMapa{
+    margin-left: 70px;
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    text-decoration: none;
+}
+.descripcionMapa i{
+    margin-right: 10px;
+}
+.footer{
+    padding: 40px 0;
+   background-color: rgb(255, 255, 255);
+   margin-top: 40px;  /*modificado*/
+}
+.footer .redes{
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;
+    cursor: pointer;
+}
+.footer .redes i{
+    color: black;
+    font-size: 24px;
+    border: 1px solid gray;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+.footer .redes .instagram:hover{
+    background-color: rgb(241, 132, 7);
+}
+.footer .redes .whatsapp:hover{
+    background-color: rgb(74, 153, 0);
+}
+.footer .redes .facebook:hover{
+    background-color: rgb(0, 89, 255);
+}
+.footer ul{
+   margin-top: 0;
+   padding: 0;
+   list-style: none;
+   font-size: 18px;
+   line-height: 1.16;
+   margin-bottom: 0px;
+   text-align: center;
+}
+.footer ul li a{
+   color: black;
+   text-decoration: none;
+}
+.footer ul li{
+display: inline-block;
+padding: 0 15px;
+}
+.footer ul li:hover{
+    transform: scale(1.1);
+    background-color: rgb(235, 233, 233);
+}
+.footer .derechosAutor{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: grey;
+}
+.containerTituloHistoria{
+   margin-top: 200px;
+   margin-left: 20px;
+}
+.tituloHistoria{
+  color: black;
+  font-size: 80px;
+}
+
+/*.itemHistoria :nth-child(1){
+  animation-delay: 4s;
+  opacity: -5;
+}*/
+/*.itemHistoria2{
+  animation-delay: 10s;
+  opacity: 100;
+}*/
+.itemHistoria{
+    animation: roll 3s ease 1s infinite backwards;
+    opacity: 0;
+  }
+  @keyframes roll{
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -70%, 0);
+    }
+   25%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+  }
+  /*@keyframes roll2{
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -160%, 0);
+    }
+    2.5%, 25%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+  }*/
+  .texto1Historia{
+    color: black;
+    font-size: 23px;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  .texto2Historia{
+    color: black;
+    font-size: 23px;
+    text-align: right;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 200px;
+  }
+  .texto3Historia{
+    color: black;
+    font-size: 23px;
+    margin-top: 200px;
+    margin-left: 30px;
+    margin-bottom: 100px;
+  }
+  .imagenHistoria{
+    width: 430px;
+    height: 300px;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  .contenedorInfoHistoria{
+   display: flex;
+   align-items: center;
+   text-align: center;
+  }
+  .inscripciones{
+    padding-top: 30px;
+ /* width: 1349px;
+  height: 200px;*/
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+  margin-left: 430px;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(77, 77, 77);
+  margin-bottom: 50px;
+  }
+  
+  .tituloInscripciones{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  .btnInscripciones{
+    background-color: rgb(44, 44, 44);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  .btnInscripciones{
+    background-color: rgb(44, 44, 44);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    height: 40px;
+    margin-left: 140px;
+  }
+  .btnInscripciones:hover{
+   background-color: rgb(0, 0, 0);
+    transform: scale(1.1, 1.1);
+  }
+  .sectionInscripciones{
+   display: flex;
+   text-align: center;
+   justify-content: center;
+  }
+  .logo-inscripcion{
+   width: 150px;
+   height: 100px;
+  }
+  .contenedorTituloEscuelaDeVuelo{
+    width: 100%;
+    margin-top: 100px;
+    height: 380px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: url(./img/fondo-servicios.jpg);
+  }
+  .tituloEscuelaDeVuelo{
+   color: white;
+   font-size: 80px;
+  }
+  .textoRequisito{
+    display: flex;
+  }
+  .tituloRequisitos{
+   font-size: 30px;
+   margin-left: 500px;
+  }
+  .contenedorRequisitos{
+    margin-top: 50px;
+  }
+  .contenedorTextoRequisitos{
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  /*.linkRequisito{
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   background-color: rgb(0, 0, 0);
+   border-radius: 5px;
+   padding: 5px;
+  }
+  .contenedorCardsRequisitos{
+   display: flex;
+  }
+  .cardRequisito{
+    width: 300px;
+    height: 270px;
+    margin: 10px;
+    padding: 20px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 14px;
+    text-align: center;
+    position: relative;
+    /* cursor: pointer; */
+    /*background-color: rgba(255, 255, 255, 0) /padding-left: 100px; margin-left: 30px; width: 56px; height: 370px;/;
+  }*/
