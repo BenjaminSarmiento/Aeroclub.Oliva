@@ -166,7 +166,7 @@ video{
    display: flex;
    flex: wrap;
    justify-content: center;
-   padding-bottom: 50px;
+   padding-bottom: 20px;
 }
 .card{
     width: 200px;
@@ -217,6 +217,7 @@ video{
 }
 .linkCard{
    text-decoration: none;
+   color: black;
 }
 /*testimonios*/
 .comentarios{
@@ -494,15 +495,20 @@ padding: 0 15px;
   .contenedorTituloEscuelaDeVuelo{
     width: 100%;
     margin-top: 100px;
-    height: 380px;
+    /*height: 380px;*/
+    height: 100vh;
     display: flex;
     text-align: center;
     justify-content: center;
-    background-image: url(./img/fondo-servicios.jpg);
+    background-image: url(./img/imagen-portada-escuela2.jpg);
   }
   .tituloEscuelaDeVuelo{
-   color: white;
+   color: rgb(0, 0, 0);
    font-size: 80px;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   padding-top: 200px;
   }
   .textoRequisito{
     display: flex;
@@ -540,3 +546,96 @@ padding: 0 15px;
     /* cursor: pointer; */
     /*background-color: rgba(255, 255, 255, 0) /padding-left: 100px; margin-left: 30px; width: 56px; height: 370px;/;
   }*/
+
+  .contenedorTituloServicios{
+    width: 100%;
+    margin-top: 100px;
+    /*height: 380px;*/
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: url(./img/imagen-portada-servicios7.jpg);
+    opacity: 0.9;
+  }
+  .tituloPrincipalServicios{
+   color: rgb(0, 0, 0);
+   font-size: 80px;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   padding-top: 200px;
+  }
+
+
+
+
+
+
+  
+  
+  ul.show{
+    top: 65px;
+  }
+@media screen and (max-width: 952px){
+    
+    .logoNav{
+        font-size: 30px;
+        padding-left: 35px;
+    }
+    
+    .menu li a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 858px){
+    
+    .navbar{
+        height: 65px;
+    }
+    
+    .btnMenu{
+       display: inline-flex;
+    }
+    .menu{
+      position: fixed;
+      width: 100vh;
+      height: calc(100% - 65px);
+      background-color: rgb(43, 32, 32);
+      top: 100vh;
+      text-align: center;
+      transition: all .4s;
+      flex-direction: column;
+    }
+    .menu li{
+      margin: 30px 0 0 0;
+      line-height: 30px;
+    }
+    .menu li:hover{
+      background: none;
+    }
+    .menu li a{
+     font-size: 20px;
+     color: white;
+     font-weight: bold;
+    }
+    .menu li a:hover{
+     color: rgb(66, 66, 66);
+    }
+    .logoNav{
+     font-size: 25px;
+     padding-left: 35px;
+    }
+}
+
+@media screen and (max-width: 858px) and (orientation:landscape){
+    
+    .menu li{
+        margin: 5px 0 0 0;
+    }
+    .menu{
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+}

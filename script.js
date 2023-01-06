@@ -1,8 +1,8 @@
 
+
 const cards= [
 {titulo: "Vuelos bautismo", img: "../img/servicios-1-removebg-preview.png",},
 {titulo: "Vuelos privados", img: "../img/servicios-6.png",},
-{titulo: "Escuela de vuelo", img: "../img/servicios-3-removebg-preview.png",},
 {titulo: "Hangaraje", img: "../img/servicios-4-removebg-preview.png",},
 {titulo: "Planeadores", img: "../img/servicios-7.png",},
 ]
@@ -45,8 +45,8 @@ renderizarCards(cards)
   for (const card of arrayCards) {
       let tarjetaCards = document.createElement("button")
       tarjetaCards.innerHTML = `
-      <img class="imagenCard" src=${card.img}>
-      <h2 class="tituloCard"><strong>${card.titulo}</strong></h2>
+        <img class="imagenCard" src=${card.img}>
+        <h2 class="tituloCard"><strong>${card.titulo}</strong></h2>
       `
       contenedorCards.append(tarjetaCards)
       contenedorCards.className ="cards"
@@ -74,3 +74,14 @@ renderizarTestimonios(comentarios)
       tarjetaComentarios.className= "comentario"
     }
 }
+
+
+addEventListener( 'DOMContentLoaded ', () => {
+  const btnMenu =document.querySelector('.btnMenu')
+  if ( btnMenu) {
+    btnMenu.addEventListener('click', () => {
+      const menu =document.querySelector('.menu')
+      menu.classList.toggle('show')
+    })
+  }
+  }) 
