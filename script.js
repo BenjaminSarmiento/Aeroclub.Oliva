@@ -6,41 +6,17 @@ const cards= [
 {titulo: "Hangaraje", img: "../img/servicios-4-removebg-preview.png",},
 {titulo: "Planeadores", img: "../img/servicios-7.png",},
 ]
-const cursos= [
-{titulo: "Vuelos bautismo", img: "../img/servicios-1-removebg-preview.png",},
-{titulo: "Vuelos privados", img: "../img/servicios-6.png",},
-{titulo: "Escuela de vuelo", img: "../img/servicios-3-removebg-preview.png",},
-{titulo: "Hangaraje", img: "../img/servicios-4-removebg-preview.png",},
-{titulo: "Planeadores", img: "../img/servicios-7.png",},
-]
 const comentarios= [
 {nombre: "Benjamin Sarmiento", profesion: "Estudiante piloto privado", img: "../img/testimonio1.jpg",comentario: "Estoy muy contento de formar parte del aeroclub, la calidad de personas y profesionales que hay en este club es inimaginable. Entre pilotos y alumnos se forman amistades, compartiendo todos la misma pasion"},
 {nombre: "Benjamin Sarmiento", profesion: "Piloto privado", img: "../img/testimonio1.jpg",comentario: "Estoy muy contento de formar parte del aeroclub, la calidad de personas y profesionales que hay en este club es inimaginable. Entre pilotos y alumnos se forman amistades, compartiendo todos la misma pasion"},
 {nombre: "Benjamin Sarmiento", profesion: "Instructor", img: "../img/testimonio1.jpg",comentario: "Estoy muy contento de formar parte del aeroclub, la calidad de personas y profesionales que hay en este club es inimaginable. Entre pilotos y alumnos se forman amistades, compartiendo todos la misma pasion"},
 ]
 let contenedorCards = document.getElementById("contenedorCards")
-let testimonios = document.getElementById("testimonios")
-let informacionCursos = document.getElementById("informacionCursos")
+let testimoniosAlumnos = document.getElementById("testimonios")
 
+renderizarCartas(cards)
 
-renderizarCards(cursos)
-
- function renderizarCards(arrayCursos) {
-  informacionCursos.innerHTML= ' '
-  for (const curso of arrayCursos) {
-      let tarjetaCurso = document.createElement("button")
-      tarjetaCurso.innerHTML = `
-      <img class="imagenCard" src=${curso.img}>
-      <h2 class="tituloCard"><strong>${curso.titulo}</strong></h2>
-      `
-      informacionCursos.append(tarjetaCurso)
-      informacionCursos.className ="cursos"
-      tarjetaCurso.className= "curso"
-    }
-}
-renderizarCards(cards)
-
- function renderizarCards(arrayCards) {
+ function renderizarCartas(arrayCards) {
   contenedorCards.innerHTML= ' '
   for (const card of arrayCards) {
       let tarjetaCards = document.createElement("button")
@@ -56,7 +32,7 @@ renderizarCards(cards)
 renderizarTestimonios(comentarios)
 
  function renderizarTestimonios(arrayComentarios) {
-  testimonios.innerHTML= ' '
+  testimoniosAlumnos.innerHTML= ' '
   for (const comentario of arrayComentarios) {
       let tarjetaComentarios = document.createElement("button")
       tarjetaComentarios.innerHTML = `
@@ -69,14 +45,14 @@ renderizarTestimonios(comentarios)
       </div>
       <h3 class="descripcionComentario">${comentario.comentario}</h3>
       `
-      testimonios.append(tarjetaComentarios)
-      testimonios.className ="comentarios"
+      testimoniosAlumnos.append(tarjetaComentarios)
+      testimoniosAlumnos.className ="comentarios"
       tarjetaComentarios.className= "comentario"
     }
 }
 
 
-addEventListener( 'DOMContentLoaded ', () => {
+/*addEventListener( 'DOMContentLoaded ', () => {
   const btnMenu =document.querySelector('.btnMenu')
   if ( btnMenu) {
     btnMenu.addEventListener('click', () => {
@@ -84,4 +60,4 @@ addEventListener( 'DOMContentLoaded ', () => {
       menu.classList.toggle('show')
     })
   }
-  }) 
+  }) */
